@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,initial_scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>electronique</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="electro.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>III: Calcule d'un sircuit electrique</h1>
+        <h2>Calculer I1,I2,I3,U1,U2,U3</h2>
+        <img src="ced.png" id="image">
+        <div class="donnée">
+            <h2>saisir les données</h2>
+            <div class="partie_in">
+                <form id="frm">
+                    R1:<input type="text" id="r1">
+                    R2:<input type="text" id="r2"> 
+                    R3:<input type="text" id="r3">
+                    U:<input type="text" id="u0">
+                </form>
+            </div>
+            <div class="button">
+            <button id="type-here" class="btn1" onclick="fonc()">calcule</button>
+        </div>
+            <div>
+                <div class="partie_out">
+                    <form>
+                        <label for="i1">I1:</label>  
+                        <input type="text" id="i1" name="I1" value="" readonly>
+                        <label for="i2">I2:</label>  
+                        <input type="text" id="i2" name="I2" value="" readonly>
+                        <label for="i3">I3:</label>  
+                        <input type="text" id="i3" name="I3" value="" readonly>
+                        <label for="u1">U1:</label>  
+                        <input type="text" id="u1" name="U1" value="" readonly>
+                        <label for="u2">U2:</label>  
+                        <input type="text" id="u2" name="U2" value="" readonly>
+                        <label for="u3">U3:</label>  
+                        <input type="text" id="u3" name="U3" value="" readonly>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button id="type-here" class="btn2" onclick="rafraîchir()">rafraîchir</button>
+    </div>
+</body>
+
+</html>

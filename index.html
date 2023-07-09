@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MY WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_eco.css">
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" class="current">Accueil</a></li>
+                    <li><a href="#A">I</a></li>
+                    <li><a href="#B">II</a></li>
+                    <li><a href="#C">III</a></li>
+                    <li><a href="#D">IV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="pub">
+        <div class="container">
+            <h1>BIENVENUE SUR JS WEBSITE</h1>
+            <h2>I: Resoudre un trinôme ax²+bx+c=0</h2>
+            <h2>II: Resoudre un SL à 3 inconnue par la methode CRAMER</h2>
+            <h2>III: Calcule d'un circuit électrique</h2>
+            <h2>IV: Animation des couches publicitaires (Z-index)</h2>
+        </div>
+    </div>
+
+    <section class="container content">
+        <h2></h2>
+        <p></p>
+        <h2></h2>
+        <p></p>
+    </section>
+
+    <!-- EXO 1 -->
+    <div id="A">
+        <div class="exo">
+            <h1>Resoudre un trinôme ax²+bx+c=0</h1>
+
+            <div class="presentation">
+                <h3>ax²+bx+c = 0</h3>
+            </div>
+                    <h2>saisir les données</h2>
+            <div class="fonction">
+                <div class="partie_in">
+                    <form id="add_to_me">
+                        <label for="uname">a : </label>
+                        <input type="number" id="a" name="a" value=""/>
+                        <label for="uname">b : </label>
+                        <input type="number" id="b" name="b" value=""/>
+                        <label for="uname">c : </label>
+                        <input type="number" id="c" name="c" value=""/>
+                    </form>
+                </div>
+
+                <div class="button">
+                    <button id="type-here" class="btn1" onclick="myFunction()">calcule</button>
+                </div>
+
+                <div class="partie_out" id="add_to_me" >
+                     <form>
+                        <label for="x1">x1:</label>  
+                        <input type="text" id="exo1x1" name="x1" value="" readonly>
+                        <label for="x2">x2:</label>  
+                        <input type="text" id="exo1x2" name="x2" value="" readonly>
+                    </form>
+                </div>
+
+            </div>
+            <button id="type-here" class="btn2" onclick="rafraîchir()">rafraîchir</button>
+        <div class="res">
+            <p id="reponse"></p>
+        </div>
+        </div>
+    </div>
+
+    <!-- ********************************************************************************************************* -->
+    <div id="B">
+        <div class="exo">
+            <h1>
+        Resoudre un SL à 3 inconnue par la methode CRAMER
+    </h1>
+        <div class="presentation">
+            <p>a11x1 + a12x2 + a13x3 = b1</p>
+            <p>a21x1 + a22x2 + a23x3 = b2</p>
+            <p>a33x1 + a32x2 + a33x3 = b3</p>
+        </div>
+        <h2>saisir les données</h2>
+        <div class="fonction">
+        <div class="partie_in ">
+            <form>
+                <div class="donnée">
+                    <div class="ligne1">
+                        <label for="uname">a11 : </label>
+                        <input type="number" id="a11" name="a11" value=""/>
+                        <label for="uname">a12 : </label>
+                        <input type="number" id="a12" name="a12" value=""/>
+                        <label for="uname">a13 : </label>
+                        <input type="number" id="a13" name="a13" value=""/>
+                        <label for="uname">b1 : </label>
+                        <input type="number" id="b1" name="b1" value=""/>
+                    </div><br>
+                    <div class="ligne2">
+                        <label for="uname">a21 : </label>
+                        <input type="number" id="a21" name="a21" value=""/>
+                        <label for="uname">a22 : </label>
+                        <input type="number" id="a22" name="a22" value=""/>
+                        <label for="uname">a23 : </label>
+                        <input type="number" id="a23" name="a23" value=""/>
+                        <label for="uname">b2 : </label>
+                        <input type="number" id="b2" name="b2" value=""/>
+                    </div><br>
+                    <div class="ligne3">
+                        <label for="uname">a31 : </label>
+                        <input type="number" id="a31" name="a31" value=""/>
+                        <label for="uname">a32 : </label>
+                        <input type="number" id="a32" name="a32" value=""/>
+                        <label for="uname">a33 : </label>
+                        <input type="number" id="a33" name="a33" value=""/>
+                        <label for="uname">b3 : </label>
+                        <input type="number" id="b3" name="b3" value=""/>
+                    </div><br>
+                </div>
+            </form>
+        </div>
+        <div class="button">
+            <button id="type-here" class="btn1" onclick="getValue()">calcule</button>
+        </div>
+        <div class="partie_out">
+            <form>
+                <label for="x1">x1:</label>  
+                <input type="text" id="exo2x1" name="x1" value="" readonly>
+                <label for="x2">x2:</label>  
+                <input type="text" id="exo2x2" name="x2" value="" readonly>
+                <label for="x3">x3:</label>  
+                <input type="text" id="exo2x3" name="x3" value="" readonly>
+            </form>
+        </div>
+        </div>
+            <button id="type-here" class="btn2" onclick="rafraîchir()">rafraîchir</button>
+        </div>
+    </div>
+
+ 
+    <!--CONTACT-->
+    <div id="C">
+        <div class="exo">
+            <h1>Calcule d'un circuit électrique</h1>
+        <h2>Calculer I1,I2,I3,U1,U2,U3</h2>
+        <img src="exo3/ced.png" id="image">
+        <div class="donnée">
+            <h2>saisir les données</h2>
+            <div class="partie_in">
+                <form id="frm">
+                    R1:<input type="text" id="r1">
+                    R2:<input type="text" id="r2"> 
+                    R3:<input type="text" id="r3">
+                    R4:<input type="text" id="r4">
+                    U:<input type="text" id="u">
+                </form>
+            </div>
+            <div class="button">
+            <button id="type-here" class="btn1" onclick="fonc()">calcule</button>
+        </div>
+            <div>
+                <div class="partie_out">
+                    <form>
+                        <div class="ligne1">
+                            <label for="i1">I1:</label>  
+                            <input type="number" id="i1" name="I1" value="" readonly>
+                            <label for="i2">I2:</label>  
+                            <input type="number" id="i2" name="I2" value="" readonly>
+                            <label for="i3">I3:</label>  
+                            <input type="number" id="i3" name="I3" value="" readonly>
+                        </div><br>
+                        <div class="ligne2">
+                            <label for="u1">U1:</label>  
+                            <input type="text" id="u1" name="U1" value="" readonly>
+                            <label for="u2">U2:</label>  
+                            <input type="text" id="u2" name="U2" value="" readonly>
+                            <label for="u3">U3:</label>  
+                            <input type="text" id="u3" name="U3" value="" readonly>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button id="type-here" class="btn2" onclick="rafraîchir()">rafraîchir</button>
+        </div>
+    </div>
+
+    <!--fin-->
+    <div id="D">
+        <div class="neonText">
+            <h1> Animation des couches publicitaires</h1>
+            <div class="animation">
+                <img class="diapo" src="exo4/img/image3.png" style="width:100%">
+                <img class="diapo" src="exo4/img/image4.png" style="width:100%">
+                <img class="diapo" src="exo4/img/image5.png" style="width:100%">
+                <img class="diapo" src="exo4/img/image6.png" style="width:100%">
+                <img class="diapo" src="exo4/img/image7.png" style="width:100%">
+                <img class="diapo" src="exo4/img/image8.png" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scripte_exo.js"></script>
+    <script src="script_animation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,initial_scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>I: Resoudre un trinôme ax²+bx+c=0 dans R</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style_eco.css">
+    <link rel="stylesheet" href="../bootstrap_css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <ul>
+                    <li><a href="../index.html" class="current">Accueil</a></li>
+                    <li><a href="exo1.html">I</a></li>
+                    <li><a href="../exo2/exo2.html">II</a></li>
+                    <li><a href="../exo3/exo3.html">III</a></li>
+                    <li><a href="../exo4/exo4.html">III</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="A">
+        <h1>Resoudre un trinôme ax²+bx+c=0 dans R</h1>
+    <div class="container">
+        <div class="presentation">
+            <h3>ax²+bx+c = 0</h3>
+        </div>
+        <h2>saisir les données</h2>
+        <div class="fonction">
+            <div class="partie_in">
+                <form>
+                    <label for="uname">a : </label>
+                    <input type="text" id="a" name="a" value=""/>
+                    <label for="uname">b : </label>
+                    <input type="text" id="b" name="b" value=""/>
+                    <label for="uname">c : </label>
+                    <input type="text" id="c" name="c" value=""/>
+                </form>
+            </div>
+            <div class="button">
+            <button id="type-here" class="btn1" onclick="myFunction()">calcule</button>
+        </div>
+        <div class="partie_out">
+             <form>
+                <label for="x1">x1:</label>  
+                <input type="text" id="x1" name="x1" value="" readonly>
+                <label for="x2">x2:</label>  
+                <input type="text" id="x2" name="x2" value="" readonly>
+            </form>
+        </div>
+
+        </div>
+        <button id="type-here" class="btn2" onclick="rafraîchir()">rafraîchir</button>
+    </div>
+
+
+    <div class="res">
+        <p id="reponse"></p>
+    <script src="../script.js"></script>
+    <script src="../scripte_exo.js"></script>
+    <script src="../script_animation.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+#A {
+	text-align: center;
+    padding: 10%;
+    margin: 10%;
+    z-index: 1;
+}
+
+#B {
+    text-align: center;
+    padding: 10%;
+    margin: 10%;
+    z-index: 1;
+}
+
+#C {
+    text-align: center;
+    padding: 10%;
+    margin: 10%;
+    z-index: 1;
+}
+
+#D {
+    text-align: center;
+    padding: 10%;
+    margin: 10%;
+    z-index: 1;
+}
+
+
+
+
+input {
+	height: 30px;
+	width: 50px;
+	margin: 5px;
+}
+
+.donnée {
+    text-align: center !important;
+}
+
+.btn1 {
+	border: none;
+    background-color: rgb(107, 140, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    margin: 20px;
+}
+
+.btn2 {
+	border: 1px solid rgb(181, 79, 233);
+    color: rgb(181, 79, 233);
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    margin: 20px;
+}

@@ -1,0 +1,22 @@
+
+
+body {
+    display: flex;
+/*    align-items: center;
+    justify-content: center;*/
+    height: 100vh;
+    overflow: hidden;
+    /*margin: auto*/;
+    margin left: 100px;
+}
+
+.container {
+    /*display: flex;*/
+    width: 90vw;
+     text-align: center !important;
+}
+
+.animation {
+    max-width: 50%;
+    background-color: #ffffff;
+}
